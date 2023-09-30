@@ -1,0 +1,8 @@
+<h2>ESTOY EN EL ABOUT</h2>
+
+<div *ngFor="let pokemon of ( pokeObs$ | async )">
+    {{pokemon.name}}
+</div>
+
+
+<button routerLink="/">Ir al home</button>

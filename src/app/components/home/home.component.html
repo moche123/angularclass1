@@ -1,0 +1,12 @@
+<h2>{{title}}</h2>
+
+
+<app-child 
+[informationReceivedFromParent]="informationToChild"
+(sendToParentFromChild)="manageChildInformation($event)"
+></app-child>
+
+<button (click)="changeParentInformation()">Click me</button>
+<button routerLink="/about">Ir al about</button>
+
+Información recibida del hijo: {{informationFromChild}}
